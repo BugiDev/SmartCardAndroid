@@ -1,0 +1,87 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+       
+    <item name="android:editTextBackground">@drawable/edit_text_holo_light</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/ButtonSmartCardTheme</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonSmartCardTheme</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerSmartCardTheme</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarSmartCardTheme</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarSmartCardTheme</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigSmartCardTheme</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallSmartCardTheme</item>
+
+    <item name="android:buttonStyleToggle">@style/ToggleSmartCardTheme</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb_holo</item>
+
+    </style>
+    
+    
+  <style name="ButtonSmartCardTheme" parent="android:Widget.Holo.Light.Button">
+	  <item name="android:background">@drawable/btn_default_holo_light</item>
+  </style>
+
+  <style name="ImageButtonSmartCardTheme" parent="android:Widget.Holo.Light.ImageButton">
+	  <item name="android:background">@drawable/btn_default_holo_light</item>
+  </style>
+
+  <style name="SpinnerSmartCardTheme" parent="android:Widget.Holo.Light.Spinner">
+      <item name="android:background">@drawable/spinner_background_holo_light</item>
+      <item name="android:dropDownSelector">@drawable/list_selector_holo_light</item>
+  </style>
+
+  <style name="ProgressBarSmartCardTheme" parent="android:Widget.Holo.Light.ProgressBar.Horizontal">
+      <item name="android:progressDrawable">@drawable/progress_horizontal_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo_light</item>
+  </style>
+
+  <style name="RatingBarSmartCardTheme" parent="android:Widget.Holo.Light.RatingBar">
+      <item name="android:progressDrawable">@drawable/ratingbar_full_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/ratingbar_full_holo_light</item>
+  </style>
+
+  <style name="RatingBarBigSmartCardTheme" parent="android:Widget.Holo.Light.RatingBar.Indicator">
+      <item name="android:progressDrawable">@drawable/ratingbar_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/ratingbar_holo_light</item>
+  </style>
+
+  <style name="RatingBarSmallSmartCardTheme" parent="android:Widget.Holo.Light.RatingBar.Small">
+      <item name="android:progressDrawable">@drawable/ratingbar_small_holo_light</item>
+      <item name="android:indeterminateDrawable">@drawable/ratingbar_small_holo_light</item>
+  </style>
+
+  <style name="ToggleSmartCardTheme" parent="android:Widget.Holo.Light.Button.Toggle">
+      <item name="android:background">@drawable/btn_toggle_holo_light</item>
+  </style>
+  
+   <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/custom_dialog_border</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+</resources>

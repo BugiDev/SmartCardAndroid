@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+       
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:editTextStyle">@style/EditTextSmartCardTheme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxSmartCardTheme</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonSmartCardTheme</item>
+        <item name="android:buttonStyle">@style/ButtonSmartCardTheme</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonSmartCardTheme</item>
+        <item name="android:spinnerStyle">@style/SpinnerSmartCardTheme</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemSmartCardTheme</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarSmartCardTheme</item>
+        <item name="android:ratingBarStyle">@style/RatingBarSmartCardTheme</item>
+        <item name="android:ratingBarStyleIndicator">@style/RatingBarBigSmartCardTheme</item>
+        <item name="android:ratingBarStyleSmall">@style/RatingBarSmallSmartCardTheme</item>
+        <item name="android:buttonStyleToggle">@style/ToggleSmartCardTheme</item>
+        <item name="android:listViewStyle">@style/ListViewSmartCardTheme</item>
+        <item name="android:listViewWhiteStyle">@style/ListViewSmartCardTheme.White</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemSmartCardTheme</item>
+    </style>
+
+    <style name="EditTextSmartCardTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/edit_text_holo_light</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="CheckBoxSmartCardTheme" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/btn_check_holo_light</item>
+    </style>
+
+    <style name="RadioButtonSmartCardTheme" parent="android:Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/btn_radio_holo_light</item>
+    </style>
+
+    <style name="ButtonSmartCardTheme" parent="android:Widget.Button">
+        <item name="android:background">@drawable/btn_default_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ImageButtonSmartCardTheme" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/btn_default_holo_light</item>
+    </style>
+
+    <style name="SpinnerSmartCardTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerDropDownItemSmartCardTheme" parent="android:Widget.DropDownItem.Spinner">
+        <item name="android:checkMark">@drawable/btn_radio_holo_light</item>
+    </style>
+
+    <style name="ProgressBarSmartCardTheme" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo_light</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="RatingBarSmartCardTheme" parent="android:Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_full_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_full_holo_light</item>
+    </style>
+
+    <style name="RatingBarBigSmartCardTheme">
+        <item name="android:progressDrawable">@drawable/ratingbar_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_holo_light</item>
+        <item name="android:minHeight">35dip</item>
+        <item name="android:maxHeight">35dip</item>
+    </style>
+
+    <style name="RatingBarSmallSmartCardTheme">
+        <item name="android:progressDrawable">@drawable/ratingbar_small_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_small_holo_light</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="ToggleSmartCardTheme" parent="android:Widget.Button.Toggle">
+        <item name="android:background">@drawable/btn_toggle_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ListViewSmartCardTheme" parent="android:Widget.ListView">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:listSelector">@drawable/list_selector_holo_light</item>
+    </style>
+
+    <style name="ListViewSmartCardTheme.White" parent="android:Widget.ListView.White">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:listSelector">@drawable/list_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerItemSmartCardTheme" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/custom_dialog_border</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+</resources>

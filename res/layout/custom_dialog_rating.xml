@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/custom_dialog_border" >
+
+    <View
+        android:id="@+id/titleDividerTop"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/red"
+        android:visibility="visible" />
+
+    <RatingBar
+        android:id="@+id/dialog_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/ratingbar_full_holo_light" />
+
+    <Button
+        android:id="@+id/dialog_rating_button_cancle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dialog_rating_bar"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/dialog_button_cancle"
+        android:textColor="@color/white" 
+        android:background="@drawable/btn_default_holo_light"/>
+
+    <Button
+        android:id="@+id/dialog_rating_button_ok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dialog_rating_button_cancle"
+        android:layout_alignBottom="@+id/dialog_rating_button_cancle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/dialog_button_ok"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_default_holo_light" />
+
+</RelativeLayout>

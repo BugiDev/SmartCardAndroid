@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartcards.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/menu_logo"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.smartcards.activity.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smartcards.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="com.smartcards.activity.AllSubjectsActivity"
+            android:label="@string/title_activity_all_subjects" >
+        </activity>
+        <activity
+            android:name="com.smartcards.activity.CardListActivity"
+            android:label="@string/title_activity_card_list"
+            android:parentActivityName="com.smartcards.activity.AllSubjectsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.smartcards.activity.AllSubjectsActivity" />
+        </activity>
+        <activity
+            android:name="com.smartcards.activity.CardFlipActivity"
+            android:label="@string/title_card_question"
+            android:parentActivityName="com.smartcards.activity.CardListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.smartcards.activity.CardListActivity" />
+        </activity>
+        <activity
+            android:name="com.smartcards.activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.smartcards.activity.AllSubjectsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.smartcards.activity.AllSubjectsActivity" />
+        </activity>
+        <activity
+            android:name="com.smartcards.activity.InfoActivity"
+            android:label="@string/title_activity_info"
+            android:parentActivityName="com.smartcards.activity.AllSubjectsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.smartcards.activity.AllSubjectsActivity" />
+        </activity>
+        <activity
+            android:name="com.smartcards.activity.AddNewUserActivity"
+            android:label="@string/title_activity_add_new_user"
+            android:parentActivityName="com.smartcards.activity.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.smartcards.activity.LoginActivity" />
+        </activity>
+    </application>
+
+</manifest>

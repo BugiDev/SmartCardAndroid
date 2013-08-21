@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="new_user_btn">Create</string>
+    <string name="new_user_firstname">Your firstname</string>
+    <string name="new_user_lastname">Your Lastname</string>
+    <string name="new_user_username">Your username</string>
+    <string name="new_user_password">Your password</string>
+    <string name="new_user_again_password">Type password again</string>
+    <string name="new_user_birthday">Your Birthday</string>
+    <string name="new_user_email">Your Email</string>
+    
+    <string name="new_user_username_error">Your username must have at least 6 characters</string>
+    <string name="new_user_password_error">Your password must have at least 6 characters</string>
+    <string name="new_user_again_password_error">The passwords must be the same</string>
+    <string name="new_user_email_error">Your Email must be valid. It has to look like: pera.peric@host.com</string>
+    <string name="new_user_firstname_error">You have to input your first name.</string>
+    <string name="new_user_lastname_error">You have to input your last name.</string>
+
+</resources>

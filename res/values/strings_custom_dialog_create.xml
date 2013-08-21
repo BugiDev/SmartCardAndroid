@@ -1,0 +1,9 @@
+<resources>
+
+    
+    <string name="dialog_create_description">Created new account.</string>
+    <string name="dialog_create_button_ok">OK</string>
+    <string name="dialog_create_title">Thanks for creating new account!</string>
+    <string name="dialog_create_text">You will receive the email when administrators accept your account. Then you will be able to login.</string>
+    
+</resources>
